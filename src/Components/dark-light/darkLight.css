@@ -1,0 +1,19 @@
+.dark-light{
+    width:40%;
+    display:inline-block;
+}
+
+.dark-light-ul{
+    padding:0;
+    margin: 15px 0 0 0;
+    text-align:center;
+}
+
+.dark-light-ul li {
+    
+        display: inline-block;
+        padding:5px;
+        font-size: 2rem;
+        color: white;
+    
+}

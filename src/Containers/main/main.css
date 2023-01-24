@@ -1,0 +1,29 @@
+.main{
+    display:flex;
+}
+
+.main-right[data-color = Blue]{
+    text-shadow: 1px 1px 2px var(--main-c), -1px -1px 2px var(--main-c)
+}
+.main-right[data-color = Green]{
+    text-shadow: 1px 1px 2px var(--main-c-2), -1px -1px 2px var(--main-c-2);
+}
+.main-right[data-color = Red]{
+    text-shadow: 1px 1px 2px var(--main-c-3), -1px -1px 2px var(--main-c-3)
+}
+
+.main-left{
+    width: var(--sec-s);
+    height:100vh;
+    background-color:rgba(55, 55, 55, 0.5);
+}
+
+
+.main-right{
+    width: 70vw;
+    height:100vh;
+    padding-left: 10px;
+}
+
+.main-right h1{ text-shadow:none;}
+

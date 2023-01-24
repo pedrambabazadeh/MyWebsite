@@ -1,0 +1,32 @@
+.themes {
+    width:50%;
+    display: inline-block;
+}
+
+.themes-ul{
+    margin:0;
+    padding:0;
+    text-align: center;
+    margin-top:15px;
+}
+
+.themes-li{
+    border-bottom:none;
+    display:inline-block;
+    margin: 0 5px;
+    padding: 15px;
+}
+
+.themes-li:hover{
+    cursor:pointer;
+}
+
+.themes-ul [data-represent = red]{
+    background-color: var(--main-c-3);
+}
+.themes-ul [data-represent = blue]{
+    background-color: var(--main-c);
+}
+.themes-ul [data-represent = green]{
+    background-color: var(--main-c-2);
+}

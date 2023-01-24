@@ -1,0 +1,8 @@
+.app{
+  height:100vh;
+  background-color:var(--main-bc);
+  margin: 0;
+  padding: 0;
+}
+
+
