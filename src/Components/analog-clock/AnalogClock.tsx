@@ -31,16 +31,16 @@ setInterval(timing, 1000);
 
   return (
     <div className='clock-container' data-color={props.color}>
-        <svg viewBox='-50 -50 100 110'> 
-          <circle  r="50" fill="transparent" className='clock-circle' strokeWidth="3" pathLength="60" strokeDasharray=".1 .9" strokeDashoffset=".05">
+        <svg className='clock-svg' viewBox='-50 -50 100 110'> 
+          <circle  r="43" fill="transparent" className='clock-circle' strokeWidth="3" pathLength="60" strokeDasharray=".1 .9" strokeDashoffset=".05">
           </circle>
-          <circle r="50" fill="transparent" className='clock-circle' stroke={props.color} strokeWidth="4" pathLength="12" strokeDasharray=".1 .9" strokeDashoffset=".025">
+          <circle r="45" fill="transparent" className='clock-circle' stroke={props.color} strokeWidth="4" pathLength="12" strokeDasharray=".1 .9" strokeDashoffset=".025">
           </circle>
           <circle r="1"  className='clock-circle'>
           </circle>
-          <line x1="0" y1="2" x2="0" y2="-35" className='clock-pointer clock-minutes' style={{transform : `rotate(${currentMinute}deg)`}}></line>
-          <line x1="0" y1="2" x2="0" y2="-25" className='clock-pointer clock-hours' style={{transform : `rotate(${currentHour}deg)`}}></line>
-          <line x1="0" y1="8" x2="0" y2="-45" className='clock-pointer clock-seconds'  style={{transform : `rotate(${currentSecond}deg)`}}></line>
+          <line x1="0" y1="2" x2="0" y2="-25" className='clock-pointer clock-minutes' style={{transform : `rotate(${currentMinute}deg)`}}></line>
+          <line x1="0" y1="2" x2="0" y2="-20" className='clock-pointer clock-hours' style={{transform : `rotate(${currentHour}deg)`}}></line>
+          <line x1="0" y1="8" x2="0" y2="-30" className='clock-pointer clock-seconds'  style={{transform : `rotate(${currentSecond}deg)`}}></line>
         </svg>
     </div>
   )

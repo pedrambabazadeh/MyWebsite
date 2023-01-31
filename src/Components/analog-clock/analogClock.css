@@ -1,7 +1,13 @@
 .clock-container{
     display: inline-block;
-    width: 50%;
-    background-color: aquamarine;
+    width: 100%;
+    background-color: transparent;
+    text-align:center;
+    margin-top: 2rem;
+}
+
+.clock-svg {
+    width:30%;
 }
 
 .clock-pointer{
