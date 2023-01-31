@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
-import Typewriter from 'typewriter-effect'
+//import Typewriter from 'typewriter-effect'
 import './main.css'
-import {NavBar, Themes, Social, DarkLight} from '../../Components'
+import {NavBar, Themes, Social, DarkLight, AnalogClock} from '../../Components'
 import { myColors } from '../../Components/social-media/Social'
 
 
@@ -18,6 +18,7 @@ const Main = () => {
             <NavBar color={mainColor} />
             <Themes colorChange={myCallBack} />
             <DarkLight />
+            <AnalogClock color={mainColor} />
             <Social color={mainColor}/>
         </div>
         <div className='main-right' data-color={mainColor}>

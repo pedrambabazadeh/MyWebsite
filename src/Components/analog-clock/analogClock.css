@@ -1,0 +1,38 @@
+.clock-container{
+    display: inline-block;
+    width: 50%;
+    background-color: aquamarine;
+}
+
+.clock-pointer{
+    stroke-linecap: round;
+}
+
+.clock-seconds{
+    stroke-width: 1;
+}
+
+.clock-minutes{
+    stroke-width: 4;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.clock-hours{
+    stroke-width: 4;
+}
+
+.clock-container[data-color = Green] .clock-pointer, .clock-container[data-color = Green] .clock-circle{
+    stroke: var(--main-c-2);
+}
+
+.clock-container[data-color = Blue] .clock-pointer, .clock-container[data-color = Blue] .clock-circle{
+    stroke: var(--main-c);
+}
+
+.clock-container[data-color = Red] .clock-pointer, .clock-container[data-color = Red] .clock-circle{
+    stroke: var(--main-c-3);
+}
