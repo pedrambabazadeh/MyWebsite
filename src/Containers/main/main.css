@@ -15,9 +15,24 @@
 .main-left{
     width: var(--sec-s);
     height:100vh;
-    background-color:rgba(55, 55, 55, 0.5);
+
 }
 
+.main-left[data-back = "Dark"]{
+    background-color:rgba(55, 55, 55, 0.9);
+}
+
+.main-left[data-back = "Light"]{
+    background-color:rgba(132, 132, 132, 0.5);
+}
+
+.main-right[data-back = "Dark"]{
+    background-color:var(--main-bc);
+}
+
+.main-right[data-back = "Light"]{
+    background-color:var(--main-bc-2);
+}
 
 .main-right{
     width: 70vw;

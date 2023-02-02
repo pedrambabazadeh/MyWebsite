@@ -39,7 +39,7 @@ setInterval(timing, 1000);
           <circle r="1"  className='clock-circle'>
           </circle>
           <line x1="0" y1="2" x2="0" y2="-25" className='clock-pointer clock-minutes' style={{transform : `rotate(${currentMinute}deg)`}}></line>
-          <line x1="0" y1="2" x2="0" y2="-20" className='clock-pointer clock-hours' style={{transform : `rotate(${currentHour}deg)`}}></line>
+          <line x1="0" y1="2" x2="0" y2="-15" className='clock-pointer clock-hours' style={{transform : `rotate(${currentHour}deg)`}}></line>
           <line x1="0" y1="8" x2="0" y2="-30" className='clock-pointer clock-seconds'  style={{transform : `rotate(${currentSecond}deg)`}}></line>
         </svg>
     </div>
