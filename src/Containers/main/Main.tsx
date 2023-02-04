@@ -17,11 +17,11 @@ const Main = () => {
   return (
     <div className='main'>
         <div className='main-left' data-back={mainBack}>
-            <NavBar color={mainColor} />
-            <Themes colorChange={myCallBack} />
-            <DarkLight backChange={backChanger} />
-            <AnalogClock color={mainColor} />
-            <Social color={mainColor}/>
+            <NavBar color={mainColor} back={mainBack}/>
+            <Themes colorChange={myCallBack} back={mainBack}/>
+            <DarkLight backChange={backChanger} back={mainBack}/>
+            <AnalogClock color={mainColor} back={mainBack}/>
+            <Social color={mainColor} back={mainBack}/>
         </div>
         <div className='main-right' data-color={mainColor} data-back={mainBack}>
             <h1> Welcome to Pedram Babazadeh's Website</h1>

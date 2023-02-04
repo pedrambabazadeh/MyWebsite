@@ -15,9 +15,13 @@ code {
 }
 
 :root{
-  --main-c:   #2031ea;
+  --main-c:   #0513ab;
   --main-c-2: #136904;
-  --main-c-3: #be1212;
+  --main-c-3: #a20707;
+
+  --main-c-4:   #3949ff;
+  --main-c-5: #22d303;
+  --main-c-6: #ff0f0f;
 
   --main-bc:   #000000;
   --main-bc-2: #d2d2d2;
@@ -30,12 +34,22 @@ code {
   
 }
 
-[data-color = Blue]{
-  color: var(--main-c)
+[data-color = Blue][data-back = "Light"]{
+  color: var(--main-c);
 }
-[data-color = Green]{
-  color: var(--main-c-2)
+[data-color = Green][data-back = "Light"]{
+  color: var(--main-c-2);
 }
-[data-color = Red]{
-  color: var(--main-c-3)
+[data-color = Red][data-back = "Light"]{
+  color:  var(--main-c-3);
+}
+
+[data-color = Blue][data-back = "Dark"]{
+  color: var(--main-c-4);
+}
+[data-color = Green][data-back = "Dark"]{
+  color:  var(--main-c-5);
+}
+[data-color = Red][data-back="Dark"]{
+  color:  var(--main-c-6);
 }

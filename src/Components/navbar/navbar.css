@@ -1,11 +1,21 @@
-[data-color = Blue].menu li {
+[data-back="Light"][data-color = Blue].menu li {
     border-bottom: 1px solid var(--main-c);
 }
-[data-color = Green].menu li{
+[data-back="Light"][data-color = Green].menu li{
     border-bottom: 1px solid var(--main-c-2);
 }
-[data-color = Red].menu li{
+[data-back="Light"][data-color = Red].menu li{
     border-bottom: 1px solid var(--main-c-3);
+}
+
+[data-back="Dark"][data-color = Blue].menu li {
+    border-bottom: 1px solid var(--main-c-4);
+}
+[data-back="Dark"][data-color = Green].menu li{
+    border-bottom: 1px solid var(--main-c-5);
+}
+[data-back="Dark"][data-color = Red].menu li{
+    border-bottom: 1px solid var(--main-c-6);
 }
 
 .menu{
@@ -21,7 +31,12 @@
 
 }
 
-.menu li:hover{
+[data-back="Dark"].menu li:hover{
     background-color:var(--main-bc);
+    cursor: pointer;
+}
+
+[data-back="Light"].menu li:hover{
+    background-color:var(--main-bc-2);
     cursor: pointer;
 }

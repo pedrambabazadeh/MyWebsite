@@ -31,14 +31,26 @@
     stroke-width: 4;
 }
 
-.clock-container[data-color = Green] .clock-pointer, .clock-container[data-color = Green] .clock-circle{
+.clock-container[data-color = Green][data-back = "Light"] .clock-pointer, .clock-container[data-color = Green][data-back = "Light"] .clock-circle{
     stroke: var(--main-c-2);
 }
 
-.clock-container[data-color = Blue] .clock-pointer, .clock-container[data-color = Blue] .clock-circle{
+.clock-container[data-color = Blue][data-back = "Light"] .clock-pointer, .clock-container[data-color = Blue][data-back = "Light"] .clock-circle{
     stroke: var(--main-c);
 }
 
-.clock-container[data-color = Red] .clock-pointer, .clock-container[data-color = Red] .clock-circle{
+.clock-container[data-color = Red][data-back = "Light"] .clock-pointer, .clock-container[data-color = Red][data-back = "Light"] .clock-circle{
     stroke: var(--main-c-3);
+}
+
+.clock-container[data-color = Green][data-back = "Dark"] .clock-pointer, .clock-container[data-color = Green][data-back = "Dark"] .clock-circle{
+    stroke: var(--main-c-5);
+}
+
+.clock-container[data-color = Blue][data-back = "Dark"] .clock-pointer, .clock-container[data-color = Blue][data-back = "Dark"] .clock-circle{
+    stroke: var(--main-c-4);
+}
+
+.clock-container[data-color = Red][data-back = "Dark"] .clock-pointer, .clock-container[data-color = Red][data-back = "Dark"] .clock-circle{
+    stroke: var(--main-c-6);
 }

@@ -1,16 +1,18 @@
 import React, {} from 'react'
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa'
+import { backColors } from '../dark-light/DarkLight';
 import './social.css'
 export type myColors = "Blue" | "Red" | "Green";
 interface socialProps {
-  color : myColors
+  color : myColors;
+  back: backColors
 }
 
 const Social = (props : socialProps) => {
     
   return (
     <div className='social'>
-    <ul className='social-ul' data-color={props.color}>
+    <ul className='social-ul' data-color={props.color} data-back={props.back}>
         <li className='social-li' title='GitHub' data-represent='GitHub'>
            <a href="" ><FaGithub /> </a>
         </li>

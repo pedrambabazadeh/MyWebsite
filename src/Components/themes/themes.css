@@ -21,12 +21,22 @@
     cursor:pointer;
 }
 
-.themes-ul [data-represent = red]{
+.themes-ul[data-back = "Light"] [data-represent = red]{
     background-color: var(--main-c-3);
 }
-.themes-ul [data-represent = blue]{
+.themes-ul[data-back = "Light"] [data-represent = blue]{
     background-color: var(--main-c);
 }
-.themes-ul [data-represent = green]{
+.themes-ul[data-back = "Light"] [data-represent = green]{
     background-color: var(--main-c-2);
+}
+
+.themes-ul[data-back = "Dark"] [data-represent = red]{
+    background-color: var(--main-c-6);
+}
+.themes-ul[data-back = "Dark"] [data-represent = blue]{
+    background-color: var(--main-c-4);
+}
+.themes-ul[data-back = "Dark"] [data-represent = green]{
+    background-color: var(--main-c-5);
 }

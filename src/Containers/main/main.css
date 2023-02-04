@@ -2,15 +2,27 @@
     display:flex;
 }
 
-.main-right[data-color = Blue]{
-    text-shadow: 1px 1px 2px var(--main-c), -1px -1px 2px var(--main-c)
+.main-right[data-color = Blue][data-back = "Light"]{
+    text-shadow: 1px 1px 2px var(--main-c), -1px -1px 2px var(--main-c);
 }
-.main-right[data-color = Green]{
+.main-right[data-color = Green][data-back = "Light"]{
     text-shadow: 1px 1px 2px var(--main-c-2), -1px -1px 2px var(--main-c-2);
 }
-.main-right[data-color = Red]{
-    text-shadow: 1px 1px 2px var(--main-c-3), -1px -1px 2px var(--main-c-3)
+.main-right[data-color = Red][data-back = "Light"]{
+    text-shadow: 1px 1px 2px var(--main-c-3), -1px -1px 2px var(--main-c-3);
 }
+
+.main-right[data-color = Blue][data-back = "Dark"]{
+    text-shadow: 1px 1px 2px var(--main-c-4), -1px -1px 2px var(--main-c-4);
+}
+.main-right[data-color = Green][data-back = "Dark"]{
+    text-shadow: 1px 1px 2px var(--main-c-5), -1px -1px 2px var(--main-c-5);
+}
+.main-right[data-color = Red][data-back="Dark"]{
+    text-shadow: 1px 1px 2px var(--main-c-6), -1px -1px 2px var(--main-c-6);
+}
+
+
 
 .main-left{
     width: var(--sec-s);

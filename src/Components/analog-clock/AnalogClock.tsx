@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
+import { backColors } from '../dark-light/DarkLight'
 import { myColors } from '../social-media/Social'
 import './analogClock.css'
 
 interface AnalogClockProps {
-  color : myColors
+  color : myColors;
+  back : backColors
 }
 
 const AnalogClock = (props: AnalogClockProps) => {
@@ -30,7 +32,7 @@ setInterval(timing, 1000);
 
 
   return (
-    <div className='clock-container' data-color={props.color}>
+    <div className='clock-container' data-color={props.color} data-back={props.back}>
         <svg className='clock-svg' viewBox='-50 -50 100 110'> 
           <circle  r="43" fill="transparent" className='clock-circle' strokeWidth="3" pathLength="60" strokeDasharray=".1 .9" strokeDashoffset=".05">
           </circle>

@@ -13,7 +13,14 @@
     
         display: inline-block;
         padding:5px;
-        font-size: 2rem;
-        color: white;
-    
+        font-size: 2rem; 
+        cursor: pointer;
+}
+
+.dark-light-ul[data-back="Dark"] li{
+    color: white;
+}
+
+.dark-light-ul[data-back="Light"] li{
+    color: black;
 }
