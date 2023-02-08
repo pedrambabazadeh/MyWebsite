@@ -1,3 +1,8 @@
+@font-face{
+  font-family: consolas;
+  src: url("../public/files/Consolas-font/Consolas.ttf");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +11,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  color: var(--main-c)
+  color: var(--main-c);
+  font-family: 'Courier New', Courier, monospace;
 ;}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -25,6 +33,8 @@ code {
 
   --main-bc:   #000000;
   --main-bc-2: #d2d2d2;
+  --main-bc-3: #373737;
+  --main-bc-4: #cbcbcb;
 
   --obj-s: 30%;
   --obj-b: 70%;

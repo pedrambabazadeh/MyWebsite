@@ -2,15 +2,15 @@
     display:flex;
 }
 
-.main-right[data-color = Blue][data-back = "Light"]{
-    text-shadow: 1px 1px 2px var(--main-c), -1px -1px 2px var(--main-c);
+/*.main-right[data-color = Blue][data-back = "Light"]{
+    text-shadow: 1px 1px .5px var(--main-c), -1px -1px .5px var(--main-c);
 }
 .main-right[data-color = Green][data-back = "Light"]{
-    text-shadow: 1px 1px 2px var(--main-c-2), -1px -1px 2px var(--main-c-2);
+    text-shadow: 1px 1px .5px var(--main-c-2), -1px -1px .5px var(--main-c-2);
 }
 .main-right[data-color = Red][data-back = "Light"]{
-    text-shadow: 1px 1px 2px var(--main-c-3), -1px -1px 2px var(--main-c-3);
-}
+    text-shadow: 1px 1px .5px var(--main-c-3), -1px -1px .5px var(--main-c-3);
+}*/
 
 .main-right[data-color = Blue][data-back = "Dark"]{
     text-shadow: 1px 1px 2px var(--main-c-4), -1px -1px 2px var(--main-c-4);
@@ -27,15 +27,18 @@
 .main-left{
     width: var(--sec-s);
     height:100vh;
+    width:30vw;
+    position:fixed;
+    z-index:990;
 
 }
 
-.main-left[data-back = "Dark"]{
-    background-color:rgba(55, 55, 55, 0.9);
+.main-left[data-back = "Dark"], .main-left[data-back = "Dark"] .toggle {
+    background-color:var(--main-bc-3);
 }
 
-.main-left[data-back = "Light"]{
-    background-color:rgba(132, 132, 132, 0.5);
+.main-left[data-back = "Light"], .main-left[data-back = "Light"] .toggle{
+    background-color:var(--main-bc-4);
 }
 
 .main-right[data-back = "Dark"]{
@@ -49,8 +52,30 @@
 .main-right{
     width: 70vw;
     height:100vh;
+    position:relative;
+    left:30vw;
+}
+
+.right-container{
     padding-left: 10px;
 }
 
 .main-right h1{ text-shadow:none;}
 
+.toggle{
+    position: absolute;
+    right: -15px;
+    top:45%;
+    font-size: 2.5em;
+    width:40px;
+    height:40px;
+    cursor: pointer;
+}
+
+.main-left[data-back = "Dark"] .toggle {
+    color:white;
+}
+
+.main-left[data-back = "Light"] .toggle {
+    color:Black;
+}
