@@ -3,7 +3,7 @@
 .social{
     position:absolute;
     bottom:2%;
-    width: var(--sec-s);
+    width: 100%;
 }
 
 .social-ul{

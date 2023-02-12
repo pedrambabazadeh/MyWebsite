@@ -12,14 +12,25 @@
     text-shadow: 1px 1px .5px var(--main-c-3), -1px -1px .5px var(--main-c-3);
 }*/
 
-.main-right[data-color = Blue][data-back = "Dark"]{
+.main[data-back = "Dark"][data-color = Blue] .main-right {
     text-shadow: 1px 1px 2px var(--main-c-4), -1px -1px 2px var(--main-c-4);
 }
-.main-right[data-color = Green][data-back = "Dark"]{
+.main[data-back = "Dark"][data-color = Green] .main-right {
     text-shadow: 1px 1px 2px var(--main-c-5), -1px -1px 2px var(--main-c-5);
 }
-.main-right[data-color = Red][data-back="Dark"]{
+.main[data-back="Dark"][data-color = Red] .main-right {
     text-shadow: 1px 1px 2px var(--main-c-6), -1px -1px 2px var(--main-c-6);
+}
+
+
+.main[data-back = "Dark"][data-color = Blue] .main-left, .main[data-back = "Dark"][data-color = Blue] .main-left .toggle {
+    border-color:var(--main-c-4);
+}
+.main[data-back = "Dark"][data-color = Green] .main-left, .main[data-back = "Dark"][data-color = Green] .main-left .toggle{
+    border-color:var(--main-c-5);
+}
+.main[data-back="Dark"][data-color = Red] .main-left, .main[data-back = "Dark"][data-color = Red] .main-left .toggle {
+    border-color:var(--main-c-6);
 }
 
 
@@ -30,22 +41,40 @@
     width:30vw;
     position:fixed;
     z-index:990;
-
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    border-style: solid;
+    border-width: 1px;;
 }
 
-.main-left[data-back = "Dark"], .main-left[data-back = "Dark"] .toggle {
-    background-color:var(--main-bc-3);
+.left-container{
+    overflow-x: hidden;
 }
 
-.main-left[data-back = "Light"], .main-left[data-back = "Light"] .toggle{
-    background-color:var(--main-bc-4);
+.main-left[data-status = true] {
+    left:0;
 }
 
-.main-right[data-back = "Dark"]{
+.main-left[data-status = false] {
+    left:-30vw;
+}
+
+.main[data-back = "Dark"] .main-left, .main[data-back = "Dark"] .toggle, .main[data-back="Dark"] {
     background-color:var(--main-bc);
 }
 
-.main-right[data-back = "Light"]{
+.main[data-back = "Light"] .main-left, .main[data-back = "Light"] .toggle, .main[data-back = "Light"]{
+    background-color:var(--main-bc-4);
+}
+
+.main[data-back = "Dark"] .main-right{
+    background-color:var(--main-bc);
+}
+
+.main[data-back = "Light"] .main-right{
     background-color:var(--main-bc-2);
 }
 
@@ -54,28 +83,29 @@
     height:100vh;
     position:relative;
     left:30vw;
+    
 }
 
-.right-container{
-    padding-left: 10px;
-}
 
 .main-right h1{ text-shadow:none;}
 
 .toggle{
     position: absolute;
-    right: -15px;
+    right: -39px;
     top:45%;
     font-size: 2.5em;
     width:40px;
     height:40px;
     cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-left: none;
 }
 
-.main-left[data-back = "Dark"] .toggle {
+.main[data-back = "Dark"] .toggle {
     color:white;
 }
 
-.main-left[data-back = "Light"] .toggle {
+.main[data-back = "Light"] .toggle {
     color:Black;
 }

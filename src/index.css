@@ -44,22 +44,22 @@ code {
   
 }
 
-[data-color = Blue][data-back = "Light"]{
+[data-back = "Light"][data-color = Blue] {
   color: var(--main-c);
 }
-[data-color = Green][data-back = "Light"]{
+[data-back = "Light"][data-color = Green] {
   color: var(--main-c-2);
 }
-[data-color = Red][data-back = "Light"]{
+[data-back = "Light"][data-color = Red] {
   color:  var(--main-c-3);
 }
 
-[data-color = Blue][data-back = "Dark"]{
+[data-back = "Dark"][data-color = Blue] {
   color: var(--main-c-4);
 }
-[data-color = Green][data-back = "Dark"]{
+[data-back = "Dark"][data-color = Green] {
   color:  var(--main-c-5);
 }
-[data-color = Red][data-back="Dark"]{
+[data-back="Dark"][data-color = Red] {
   color:  var(--main-c-6);
 }

@@ -21,14 +21,24 @@
 .menu{
     margin:0;
     padding:0;
-    width:100%
+    width:100%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
+
 
 .menu li{
     list-style-type: none;
     padding: 10px 5px;
     text-align: center;
-
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 [data-back="Dark"].menu li:hover{
