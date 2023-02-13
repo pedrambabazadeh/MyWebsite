@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { Home } from '../../Containers';
 import { backColors } from '../dark-light/DarkLight'
 import { myColors } from '../social-media/Social'
 import './navbar.css'
@@ -18,13 +17,22 @@ const NavBar = (props:NavProps) => {
                    </Link>
                 
                 </li>
-                <li> <Link to='/About' style={{ display: "block", width:"100%" }}>
+                <li> 
+                   <Link to='/About' style={{ display: "block", width:"100%" }}>
                     About Me
-                   </Link> </li>
-                <li> Resume </li>
-                <li> Contact Me </li>
+                   </Link> 
+               </li> 
+               <li> 
+                   <Link to='/CV' style={{ display: "block", width:"100%" }}>
+                    Resume
+                   </Link>
+              </li> 
+              <li>
+                   <Link to='/Contact' style={{ display: "block", width:"100%" }}>
+                    Contact Me
+                   </Link> 
+              </li>
                 <li> Play A Game</li>
-                <li> Change Design</li>
             </ul>
   )
 }

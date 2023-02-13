@@ -32,13 +32,16 @@
 
 .menu li{
     list-style-type: none;
-    padding: 10px 5px;
     text-align: center;
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
+}
+
+.menu li a{
+    padding: 10px 5px;
 }
 
 [data-back="Dark"].menu li:hover{

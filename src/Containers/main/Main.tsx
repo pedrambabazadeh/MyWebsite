@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 //import Typewriter from 'typewriter-effect'
 import './main.css'
 import {NavBar, Themes, Social, DarkLight, AnalogClock} from '../../Components'
-import {Home, About} from '../../Containers'
+import {Home, About, Resume, Contact} from '../../Containers'
 import { myColors } from '../../Components/social-media/Social'
 import { backColors } from '../../Components/dark-light/DarkLight'
 import { FaCaretLeft } from 'react-icons/fa'
@@ -21,7 +21,9 @@ const Main = () => {
  const backChanger = (backColor: backColors) => {setMainBack(backColor)};
 
  const toggleMenu = () => {
-  setMenu(!menu)
+  setMenu(currrentMenu =>{
+    return !currrentMenu;
+  })
  }
  
   return (
@@ -46,17 +48,10 @@ const Main = () => {
             <Route path="/"  />
             <Route index element={<Home />} />
             <Route path='/About' element={<About />} />
-          </Routes>
-           
+            <Route path='/CV' element={<Resume />} />
+            <Route path='/Contact' element={<Contact />} />
+          </Routes>  
         </div>
-       {/*} <Typewriter
-        onInit={(writer) => {
-            writer.typeString("Hello world")
-            .pauseFor(1500)
-            .deleteAll()
-            .typeString("my name is pedrum")
-            .start();
-        }} /> */}
     </div>
   </BrowserRouter> 
   )

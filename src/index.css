@@ -63,3 +63,5 @@ code {
 [data-back="Dark"][data-color = Red] {
   color:  var(--main-c-6);
 }
+
+/* Media Query*/
