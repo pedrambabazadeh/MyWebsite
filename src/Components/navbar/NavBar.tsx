@@ -32,7 +32,11 @@ const NavBar = (props:NavProps) => {
                     Contact Me
                    </Link> 
               </li>
-                <li> Play A Game</li>
+                <li> 
+                <Link to='/game' style={{ display: "block", width:"100%" }}>
+                    Contact Me
+                   </Link> 
+                </li>
             </ul>
   )
 }

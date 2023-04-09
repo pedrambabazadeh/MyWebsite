@@ -49,3 +49,5 @@ setInterval(timing, 1000);
 }
 
 export default AnalogClock
+
+//How to use useEffect in this. IS it better?

@@ -1,0 +1,30 @@
+.photo-back{
+    position:absolute;
+}
+
+.photo-back[data-back ="Dark"] svg path{
+    opacity: 0.2;
+}
+.photo-back[data-back ="Light"] svg path{
+    opacity:.3;
+}
+
+.photo-back[data-back ="Dark"][data-color="Green"] svg path {
+    fill:var(--main-c-5);
+}
+.photo-back[data-back ="Dark"][data-color="Blue"] svg path {
+    fill:var(--main-c-4);
+}
+.photo-back[data-back ="Dark"][data-color="Red"] svg path {
+    fill:var(--main-c-6);
+}
+
+.photo-back[data-back ="Light"][data-color="Blue"] svg path {
+    fill:var(--main-c);
+}
+.photo-back[data-back ="Light"][data-color="Green"] svg path {
+    fill:var(--main-c-2);
+}
+.photo-back[data-back ="Light"][data-color="Red"] svg path {
+    fill:var(--main-c-3);
+}

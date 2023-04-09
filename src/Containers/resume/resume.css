@@ -1,0 +1,29 @@
+.resume-title, .resume-container h2{
+    text-align:center;
+}
+
+.resume-container{
+    padding-left:15px;
+    overflow-y: scroll;
+}
+
+.resume-container h2{
+    font-size: 1.5rem;
+}
+
+.resume-pic{
+    max-width: 200px;
+    display: inline;
+}
+
+section{
+    text-align:center;
+}
+
+.resume-intro-p{
+    display:inline-block;
+    width:80%;
+    padding-left: 20px;
+    text-align: justify;
+}
+
