@@ -20,10 +20,23 @@ section{
     text-align:center;
 }
 
-.resume-intro-p{
+.resume-p{
     display:inline-block;
     width:80%;
     padding-left: 20px;
     text-align: justify;
+}
+
+.resume-h2{
+    margin-bottom: 15px;
+}
+
+.resume-h3, .resume-h4{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.resume-experience{
+    margin-bottom: 15px;
 }
 
