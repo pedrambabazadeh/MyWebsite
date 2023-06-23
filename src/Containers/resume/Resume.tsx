@@ -11,6 +11,9 @@ const Resume = () => {
 
     {/* From Here*/}
     {/* Make the sections drop down using the section tag selector */}
+    {/* What if each section in this holds a component beind drop-down using states 
+    and another component inside hat component for the text?*/}
+    {/* Use Display: Grid*/}
 
       <div className='resume-container'>
         <section className='resume-intro'>
@@ -39,37 +42,36 @@ that meets project requirements.
           <h2 className='resume-h2'>
             Experience
           </h2>
-          <div className='resume-experience'>  
-            <h3 className='resume-h3'>
-              F.M. <span className='resume-headline'> Frontend Developer</span>
-            </h3>  
-            <h4 className='resume-h4'>
-            2020 – 2021
-            </h4>   
-            <p className='resume-p'>
-            Collaborated with senior programmers and other teams to make PWA and SPA web templates.
-            Worked with modern technologies and libraries including React.js.
-            </p>
-          </div>
-          <div className='resume-experience'>  
-            <h3 className='resume-h3'>
-              Poya Host <span className='resume-headline'> UI Developer</span>
-            </h3>  
-            <h4 className='resume-h4'>
-            2018 – 2019
-            </h4>   
-            <p className='resume-p'>
-            Solved the problem of direction in various web templates. Changed the directions from LTR to RTL for 
-Persian websites and redesigned the templates.
-            </p>
+          <div className='resume-body'>
+            <div className='resume-item'>  
+              <h3 className='resume-h3'>
+                Poya Host <span className='resume-headline'> Front-end Developer trainee</span>
+              </h3>  
+              <h4 className='resume-h4'>
+              oct 2018 – oct 2019
+              </h4>   
+              <p className='resume-p'>
+              Solved the problem of direction in various web templates. Changed the directions from LTR to RTL for 
+  Persian websites and redesigned the templates.
+              </p>
+            </div>
           </div>
 
-
+        </section>
+        <section className='resume-education'>
+          <h2 className='resume-h2'>
+            Certificates
+          </h2>
+          <div className='resume-body'>
+            <div className='resume-item'>
+                <h3 className='resume-h3'>
+                  JS Programming
+                </h3>
+            </div>
+          </div>
         </section>
 
       </div>
-      
-    {/* Use Display: Grid*/}
 
     </div>
   )

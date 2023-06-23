@@ -45,6 +45,8 @@
     overflow-x: hidden;
 }
 
+/* Here is where Menu toggles*/
+
 .main-left[data-status = true] {
     left:0;
 }
@@ -80,7 +82,7 @@
 
 .main-right h1{ text-shadow:none;}
 
-.toggle{
+.toggle-menu{
     position: absolute;
     right: -39px;
     top:45%;
@@ -93,10 +95,10 @@
     border-left: none;
 }
 
-.main[data-back = "Dark"] .toggle {
+.main[data-back = "Dark"] .toggle-menu {
     color:white;
 }
 
-.main[data-back = "Light"] .toggle {
+.main[data-back = "Light"] .toggle-menu {
     color:Black;
 }

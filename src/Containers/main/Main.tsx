@@ -15,7 +15,7 @@ import { FaCaretLeft } from 'react-icons/fa'
 const Main = () => {
  const [ mainColor, setMainColor] = useState<myColors>("Red"); 
  const [mainBack, setMainBack] = useState<backColors>("Dark");
- const [menu, setMenu] = useState<boolean>(true);
+ const [menu, setMenu] = useState<boolean>(false);
  
  const myCallBack = (passedData : myColors) => {setMainColor(passedData)};
  const backChanger = (backColor: backColors) => {setMainBack(backColor)};
@@ -31,9 +31,11 @@ const Main = () => {
    <BrowserRouter>
     <div className='main' data-back={mainBack} data-color={mainColor}>
               <PhotoBack color={mainColor} back={mainBack}/>
+
+              {/* Data-status indicates visibility of the menu here*/}
         <div className='main-left' data-back={mainBack} data-status={menu}>
             
-             <div className='toggle' onClick={toggleMenu}>
+             <div className='toggle toggle-menu' onClick={toggleMenu}>
                 <FaCaretLeft/>
               </div>
               <div className='left-container'>  
