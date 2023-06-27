@@ -14,13 +14,13 @@
 }
 
 
-.main[data-back = "Dark"][data-color = Blue] .main-left, .main[data-back = "Dark"][data-color = Blue] .main-left .toggle {
+.main[data-back = "Dark"][data-color = Blue] , .main[data-back = "Dark"][data-color = Blue] .main-left .toggle {
     border-color:var(--main-c-4);
 }
-.main[data-back = "Dark"][data-color = Green] .main-left, .main[data-back = "Dark"][data-color = Green] .main-left .toggle{
+.main[data-back = "Dark"][data-color = Green] , .main[data-back = "Dark"][data-color = Green] .main-left .toggle{
     border-color:var(--main-c-5);
 }
-.main[data-back="Dark"][data-color = Red] .main-left, .main[data-back = "Dark"][data-color = Red] .main-left .toggle {
+.main[data-back="Dark"][data-color = Red] , .main[data-back = "Dark"][data-color = Red] .main-left .toggle {
     border-color:var(--main-c-6);
 }
 

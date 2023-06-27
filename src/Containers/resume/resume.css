@@ -40,3 +40,14 @@ section{
     margin-bottom: 15px;
 }
 
+.resume-headline::before{
+    content: "|";
+}
+
+.resume-a{
+    padding:5px 10px;
+    width:100px;
+    border: 1px solid;
+    display: block;
+    margin: 0 auto;
+}

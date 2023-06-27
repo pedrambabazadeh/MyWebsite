@@ -65,8 +65,15 @@ that meets project requirements.
           <div className='resume-body'>
             <div className='resume-item'>
                 <h3 className='resume-h3'>
-                  JS Programming
+                  JS Programming<span className='resume-headline'>Meta Ltd</span>
                 </h3>
+                <h4 className='resume-h4'>
+                  2024 | 5 weeks
+                </h4>
+                <p className='resume-p'>
+              you can download the certificate here:
+              </p>
+              <a className='resume-a' href="" download>download</a>
             </div>
           </div>
         </section>
