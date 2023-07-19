@@ -68,12 +68,20 @@ that meets project requirements.
                   JS Programming<span className='resume-headline'>Meta Ltd</span>
                 </h3>
                 <h4 className='resume-h4'>
-                  2024 | 5 weeks
+                 2024 | 5 weeks
                 </h4>
                 <p className='resume-p'>
-              you can download the certificate here:
+              verification link is available bellow:
               </p>
-              <a className='resume-a' href="" download>download</a>
+              <a className='resume-a' href="https://www.coursera.org/account/accomplishments/certificate/DXRQ5C4GPATC" download>Click Here</a>
+            </div>
+            <div className='resume-item'>
+                <h3 className='resume-h3'>
+                  ReactJS<span className='resume-headline'>Tehran institute of technology</span>
+                </h3>
+                <h4 className='resume-h4'>
+                  2023 | 60 Hours
+                </h4>
             </div>
           </div>
         </section>

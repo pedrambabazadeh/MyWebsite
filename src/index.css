@@ -44,6 +44,11 @@ code {
   
 }
 
+body
+{
+  overflow-y: hidden;
+}
+
 [data-back = "Light"][data-color = Blue] {
   color: var(--main-c);
 }

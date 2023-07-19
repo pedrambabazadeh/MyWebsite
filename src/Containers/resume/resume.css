@@ -4,7 +4,7 @@
 
 .resume-container{
     padding-left:15px;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
 }
 
 .resume-container h2{
@@ -38,6 +38,13 @@ section{
 
 .resume-item{
     margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+.resume-item::after{
+    content:"\A******";
+    display: block;
+    margin-top: 10px;
 }
 
 .resume-headline::before{

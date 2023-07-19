@@ -76,6 +76,7 @@
     height:100vh;
     position:relative;
     left:30vw;
+    overflow-y: scroll;
     
 }
 
