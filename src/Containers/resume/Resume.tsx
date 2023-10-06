@@ -63,12 +63,25 @@ that meets project requirements.
             Certificates
           </h2>
           <div className='resume-body'>
+
+          <div className='resume-item'>
+                <h3 className='resume-h3'>
+                  Advanced React.js<span className='resume-headline'>Meta Ltd</span>
+                </h3>
+                <h4 className='resume-h4'>
+                 2024 | 16 Hours
+                </h4>
+                <p className='resume-p'>
+              verification link is available bellow:
+              </p>
+              <a className='resume-a' href="https://www.coursera.org/account/accomplishments/verify/MDH5FZX9J25W" download>Click Here</a>
+            </div>
             <div className='resume-item'>
                 <h3 className='resume-h3'>
                   JS Programming<span className='resume-headline'>Meta Ltd</span>
                 </h3>
                 <h4 className='resume-h4'>
-                 2024 | 5 weeks
+                 2024 | 42 Hours
                 </h4>
                 <p className='resume-p'>
               verification link is available bellow:
