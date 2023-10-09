@@ -34,7 +34,7 @@ const NavBar = (props:NavProps) => {
               </li>
                 <li> 
                 <Link to='/game' style={{ display: "block", width:"100%" }}>
-                    Contact Me
+                    Play Game
                    </Link> 
                 </li>
             </ul>

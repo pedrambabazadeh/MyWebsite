@@ -4,7 +4,9 @@ import './play-game.css'
 
 const PlayGame = () => {
   return (
-    <div>PlayGam</div>
+    <div>
+      <div className="rectangle"></div>
+    </div>
   )
 }
 
