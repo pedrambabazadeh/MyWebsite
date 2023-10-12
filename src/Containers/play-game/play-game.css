@@ -8,4 +8,11 @@
     transform: translate(-50%, -50%); /* Center the rectangle */
     cursor: url("/public/files/IMG/ball1.png"), pointer;
   }
+
+  .square-player{
+    background-color: green;
+    width: 25px;
+    height:25px;
+    position:relative;
+  }
   
