@@ -1,6 +1,6 @@
 .rectangle {
-    width: 60%; /* 80% of the screen width minus 20% from both sides */
-    height: 60vh; /* 60% of the viewport height */
+    width: 400px; /* 80% of the screen width minus 20% from both sides */
+    height: 400px; /* 60% of the viewport height */
     border: 2px solid white; /* 1px solid border */
     position: absolute;
     top: 50%;
@@ -13,6 +13,7 @@
     background-color: green;
     width: 25px;
     height:25px;
-    position:relative;
+    position:absolute;
+    display: inline-block;
   }
   

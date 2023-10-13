@@ -16,9 +16,11 @@ const PlayGame = () => {
     const containerWidth = container?.offsetWidth;
     const containerHeight = container?.offsetHeight;
 
-    const newSquarePositions : square[] = Array.from({ length: 8 }, () => {
-      const left = Math.random() * (containerWidth? containerWidth - 25 : 0); 
+    const newSquarePositions : square[] = Array.from({ length: 15 }, () => {
+      const left = Math.random() * (containerWidth? containerWidth - 25  : 0); 
       const top = Math.random() * (containerHeight? containerHeight - 25 : 0); 
+      console.log(containerHeight);
+      console.log(top);
       return { left, top };
     });
 
