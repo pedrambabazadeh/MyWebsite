@@ -17,7 +17,7 @@ body {
 
 
 
-code {
+.code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
@@ -27,7 +27,7 @@ code {
   --main-c-2: #136904;
   --main-c-3: #a20707;
 
-  --main-c-4:   #3949ff;
+  --main-c-4: #3949ff;
   --main-c-5: #22d303;
   --main-c-6: #ff0f0f;
 
@@ -67,6 +67,20 @@ body
 }
 [data-back="Dark"][data-color = Red] {
   color:  var(--main-c-6);
+}
+
+.main-right {
+  text-align: center;
+}
+
+.main-right p{
+  padding-left: 20px;
+  width: 80%;
+  text-align: justify;
+  margin: 0 auto;
+}
+.main-right h1 {
+  text-align : center
 }
 
 /* Media Query*/

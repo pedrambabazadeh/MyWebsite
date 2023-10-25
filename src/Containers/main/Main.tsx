@@ -7,7 +7,7 @@ import {NavBar, Themes, Social, DarkLight, AnalogClock, PhotoBack} from '../../C
 import {Home, About, Resume, Contact, PlayGame} from '../../Containers'
 import { myColors } from '../../Components/social-media/Social'
 import { backColors } from '../../Components/dark-light/DarkLight'
-import { FaCaretLeft } from 'react-icons/fa'
+import { FaBars, FaCaretLeft } from 'react-icons/fa'
 
 
 
@@ -36,7 +36,7 @@ const Main = () => {
         <div className='main-left' data-back={mainBack} data-status={menu}>
             
              <div className='toggle toggle-menu' onClick={toggleMenu}>
-                <FaCaretLeft/>
+                <FaBars/>
               </div>
               <div className='left-container'>  
                 <NavBar color={mainColor} back={mainBack}/>

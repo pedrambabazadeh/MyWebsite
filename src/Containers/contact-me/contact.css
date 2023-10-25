@@ -1,3 +1,46 @@
+/*test started*/
+.neural-network-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: -1;
+}
+
+.neural-network-background::before,
+.neural-network-background::after {
+  content: '';
+  position: absolute;
+  background-color: #00f; /* Color of the connections */
+  animation: trace-animation 2s infinite linear;
+}
+
+.neural-network-background::before {
+  width: 1px;
+  height: 100px; /* Length of connections */
+  left: 50%; /* Starting point */
+  bottom: 0;
+}
+
+.neural-network-background::after {
+  height: 1px;
+  width: 100px; /* Length of connections */
+  top: 50%; /* Starting point */
+  right: 0;
+}
+
+@keyframes trace-animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* test finisehd*/
 .clock {
     display: flex;
     flex-direction: column;

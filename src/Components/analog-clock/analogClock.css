@@ -1,3 +1,4 @@
+
 .clock-container{
     display: inline-block;
     width: 100%;
@@ -61,4 +62,13 @@
 
 .clock-container[data-color = Red][data-back = "Dark"] .clock-pointer, .clock-container[data-color = Red][data-back = "Dark"] .clock-circle{
     stroke: var(--main-c-6);
+}
+
+/* media query*/
+
+@media (max-height: 500px)
+{
+  .clock-container{
+      display: none;
+  }
 }

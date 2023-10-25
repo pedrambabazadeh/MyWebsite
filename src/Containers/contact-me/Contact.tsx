@@ -29,7 +29,7 @@ function Contact() {
   const dayOfWeek = DaysOfWeek[time.toLocaleString('en-US', { weekday: 'long' }) as keyof typeof DaysOfWeek];
 
   return (
-    <div className="clock">
+    <div className="clock neural-network-background">
       <div className="digit-group">
         <div className="digit">{formattedTime[0]}</div>
         <div className="digit">{formattedTime[1]}</div>
