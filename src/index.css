@@ -13,7 +13,9 @@ body {
 
   color: var(--main-c);
   font-family: 'Courier New', Courier, monospace;
-;}
+  font-weight:800;
+  text-transform: uppercase;
+}
 
 
 
@@ -23,18 +25,22 @@ body {
 }
 
 :root{
-  --main-c:   #0513ab;
-  --main-c-2: #136904;
-  --main-c-3: #a20707;
+  --main-c:   #030b6c;
+  --main-c-2: #0d4702;
+  --main-c-3: #5c0303;
 
-  --main-c-4: #3949ff;
-  --main-c-5: #22d303;
-  --main-c-6: #ff0f0f;
+  --main-c-4: #6e7afa;
+  --main-c-5: #7efe68;
+  --main-c-6: #fa6262;
 
   --main-bc:   #000000;
   --main-bc-2: #d2d2d2;
   --main-bc-3: #373737;
   --main-bc-4: #cbcbcb;
+  --main-res-bc:#000211;
+  --main-res-bc-2:#031200;
+  --main-res-bc-3:#230101;
+
 
   --obj-s: 30%;
   --obj-b: 70%;
@@ -49,6 +55,10 @@ body
   overflow-y: hidden;
 }
 
+[data-back = "Light"]{
+  background-color: var(--main-bc-2);
+}
+
 [data-back = "Light"][data-color = Blue] {
   color: var(--main-c);
 }
@@ -61,11 +71,14 @@ body
 
 [data-back = "Dark"][data-color = Blue] {
   color: var(--main-c-4);
+  background-color: var(--main-res-bc);
 }
 [data-back = "Dark"][data-color = Green] {
+  background-color: var(--main-res-bc-2);
   color:  var(--main-c-5);
 }
 [data-back="Dark"][data-color = Red] {
+  background-color: var(--main-res-bc-3);
   color:  var(--main-c-6);
 }
 
@@ -77,7 +90,7 @@ body
   padding-left: 20px;
   width: 80%;
   text-align: justify;
-  margin: 0 auto;
+  margin: 0 auto 15px auto;
 }
 .main-right h1 {
   text-align : center

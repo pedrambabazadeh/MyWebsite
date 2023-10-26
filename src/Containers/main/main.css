@@ -4,13 +4,13 @@
 
 
 .main[data-back = "Dark"][data-color = Blue] .main-right {
-    text-shadow: 1px 1px 2px var(--main-c-4), -1px -1px 2px var(--main-c-4);
+    text-shadow: 2px 2px 3px #2a3eda, -2px -2px 3px #2a3eda;
 }
 .main[data-back = "Dark"][data-color = Green] .main-right {
-    text-shadow: 1px 1px 2px var(--main-c-5), -1px -1px 2px var(--main-c-5);
+    text-shadow: 2px 2px 3px #0ba620, -2px -2px 3px #0ba620;
 }
 .main[data-back="Dark"][data-color = Red] .main-right {
-    text-shadow: 1px 1px 2px var(--main-c-6), -1px -1px 2px var(--main-c-6);
+    text-shadow: 2px 2px 3px #ce1717, -2px -2px 3px #ce1717;
 }
 
 
@@ -55,7 +55,7 @@
     left:-30vw;
 }
 
-.main[data-back = "Dark"] .main-left, .main[data-back = "Dark"] .toggle, .main[data-back="Dark"] {
+/*.main[data-back = "Dark"] .main-left, .main[data-back = "Dark"] .toggle, .main[data-back="Dark"] {
     background-color:var(--main-bc);
 }
 
@@ -69,7 +69,7 @@
 
 .main[data-back = "Light"] .main-right{
     background-color:var(--main-bc-2);
-}
+}*/
 
 .main-right{
     width: 70vw;
