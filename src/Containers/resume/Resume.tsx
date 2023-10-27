@@ -98,6 +98,9 @@ that meets project requirements.
             </div>
           </div>
         </section>
+        <section className='resume-skills'>
+          
+        </section>
 
       </div>
 

@@ -4,7 +4,7 @@
 
 
 .main[data-back = "Dark"][data-color = Blue] .main-right {
-    text-shadow: 2px 2px 3px #2a3eda, -2px -2px 3px #2a3eda;
+    text-shadow: 2px 2px 3px #3b52ff, -2px -2px 3px #3b52ff;
 }
 .main[data-back = "Dark"][data-color = Green] .main-right {
     text-shadow: 2px 2px 3px #0ba620, -2px -2px 3px #0ba620;
@@ -85,7 +85,7 @@
 
 .toggle-menu{
     position: absolute;
-    right: -39px;
+    right: -41px;
     top:45%;
     font-size: 25px;;
     width:40px;
