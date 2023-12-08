@@ -1,5 +1,6 @@
 .photo-back{
     position:absolute;
+    height: 100vh;
 }
 
 .photo-back[data-back ="Dark"] svg path{

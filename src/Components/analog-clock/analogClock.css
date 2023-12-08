@@ -5,6 +5,7 @@
     background-color: transparent;
     text-align:center;
     margin-top: 2rem;
+    background-color: unset!important;
 }
 
 .clock-svg {

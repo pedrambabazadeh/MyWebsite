@@ -52,8 +52,6 @@ const Main = () => {
             <Route index element={<Home />} />
             <Route path='/About' element={<About />} />
             <Route path='/CV' element={<Resume />} />
-            <Route path='/Contact' element={<Contact />} />
-            <Route path='/game' element={<PlayGame />} />
           </Routes>  
 
         {/*Test Area*/}
