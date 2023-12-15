@@ -55,10 +55,6 @@ body
   overflow-y: hidden;
 }
 
-[data-back = "Light"]{
-  background-color: var(--main-bc-2);
-}
-
 [data-back = "Light"][data-color = Blue] {
   color: var(--main-c);
 }
@@ -80,10 +76,6 @@ body
 [data-back="Dark"][data-color = Red] {
   background-color: var(--main-res-bc-3);
   color:  var(--main-c-6);
-}
-
-.main-right {
-  text-align: center;
 }
 
 .main-right p{

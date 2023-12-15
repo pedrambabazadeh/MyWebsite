@@ -40,9 +40,9 @@ const Main = () => {
               </div>
               <div className='left-container'>  
                 <NavBar color={mainColor} back={mainBack}/>
+                <AnalogClock color={mainColor} back={mainBack}/>                
                 <Themes colorChange={myCallBack} back={mainBack}/>
                 <DarkLight backChange={backChanger} back={mainBack}/>
-                <AnalogClock color={mainColor} back={mainBack}/>
                 <Social color={mainColor} back={mainBack}/>
               </div>
         </div> 

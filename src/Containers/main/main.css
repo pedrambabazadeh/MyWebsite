@@ -38,7 +38,8 @@
     -ms-transition: .5s;
     -o-transition: .5s;
     border-style: solid;
-    border-width: 1px;;
+    border-width: 1px;
+    backdrop-filter:blur(5px) grayscale(70%);
 }
 
 .left-container{
@@ -55,29 +56,29 @@
     left:-30vw;
 }
 
-/*.main[data-back = "Dark"] .main-left, .main[data-back = "Dark"] .toggle, .main[data-back="Dark"] {
-    background-color:var(--main-bc);
-}
+/*.main[data-back = "Dark"] .main-left {
+    backdrop-filter:blur(10px);
+}*/
 
 .main[data-back = "Light"] .main-left, .main[data-back = "Light"] .toggle, .main[data-back = "Light"]{
     background-color:var(--main-bc-4);
 }
 
-.main[data-back = "Dark"] .main-right{
+/*.main[data-back = "Dark"] .main-right{
     background-color:var(--main-bc);
-}
+}*/
 
 .main[data-back = "Light"] .main-right{
     background-color:var(--main-bc-2);
-}*/
+}
 
 .main-right{
     width: 70vw;
-    height:100vh;
+    height: 100vh;
     position:relative;
     left:30vw;
     overflow-y: scroll;
-    
+    text-align:center;
 }
 
 
@@ -87,7 +88,7 @@
     position: absolute;
     right: -41px;
     top:45%;
-    font-size: 25px;;
+    font-size: 25px;
     width:40px;
     height:40px;
     cursor: pointer;
@@ -118,6 +119,7 @@
     .main-left[data-status = false] 
     {
         left:-70vw;
+    
     }
     .main-right
     {
