@@ -25,7 +25,7 @@ const Main = () => {
     return !currrentMenu;
   })
  }
- 
+
   return (
 
    <BrowserRouter>
@@ -34,35 +34,32 @@ const Main = () => {
 
               {/* Data-status indicates visibility of the menu here*/}
         <div className='main-left' data-back={mainBack} data-status={menu}>
-            
              <div className='toggle toggle-menu' onClick={toggleMenu}>
                 <FaBars/>
               </div>
-              <div className='left-container'>  
+              <div className='left-container'>
                 <NavBar color={mainColor} back={mainBack}/>
-                <AnalogClock color={mainColor} back={mainBack}/>                
+                <AnalogClock color={mainColor} back={mainBack}/>
                 <Themes colorChange={myCallBack} back={mainBack}/>
                 <DarkLight backChange={backChanger} back={mainBack}/>
                 <Social color={mainColor} back={mainBack}/>
               </div>
-        </div> 
+        </div>
         <div className='main-right' data-color={mainColor}>
           <Routes>
             <Route path="/"  />
             <Route index element={<Home />} />
             <Route path='/About' element={<About />} />
             <Route path='/CV' element={<Resume />} />
-          </Routes>  
+          </Routes>
 
         {/*Test Area*/}
-
-       
 
         {/*Test Area End*/}
 
         </div>
     </div>
-  </BrowserRouter> 
+  </BrowserRouter>
   )
 }
 
