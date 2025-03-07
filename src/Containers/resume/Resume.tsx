@@ -72,11 +72,8 @@ const Resume = () => {
           </div>
         </section>
         <section className='resume-skills'>
-          
         </section>
-
       </div>
-
     </div>
   )
 }

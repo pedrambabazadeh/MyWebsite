@@ -31,8 +31,6 @@ const Main = () => {
    <BrowserRouter>
     <div className='main' data-back={mainBack} data-color={mainColor}>
               <PhotoBack color={mainColor} back={mainBack}/>
-
-              {/* Data-status indicates visibility of the menu here*/}
         <div className='main-left' data-back={mainBack} data-status={menu}>
              <div className='toggle toggle-menu' onClick={toggleMenu}>
                 <FaBars/>

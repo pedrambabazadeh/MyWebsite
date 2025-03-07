@@ -27,7 +27,6 @@
 
 
 .main-left{
-    width: var(--sec-s);
     height:100vh;
     width:30vw;
     position:fixed;
@@ -56,20 +55,8 @@
     left:-30vw;
 }
 
-/*.main[data-back = "Dark"] .main-left {
-    backdrop-filter:blur(10px);
-}*/
-
-.main[data-back = "Light"] .main-left, .main[data-back = "Light"] .toggle, .main[data-back = "Light"]{
+.main[data-back = "Light"] .toggle, .main[data-back = "Light"]{
     background-color:var(--main-bc-4);
-}
-
-/*.main[data-back = "Dark"] .main-right{
-    background-color:var(--main-bc);
-}*/
-
-.main[data-back = "Light"] .main-right{
-    background-color:var(--main-bc-2);
 }
 
 .main-right{
