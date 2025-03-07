@@ -2,14 +2,13 @@ import React, {} from 'react'
 import { FaGithub, FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { backColors } from '../dark-light/DarkLight';
 import './social.css'
-export type myColors = "Blue" | "Red" | "Green";
+export type myColors = "Blue" | "Red" | "Green"| "Yellow" ;
 interface socialProps {
   color : myColors;
   back: backColors
 }
 
 const Social = (props : socialProps) => {
-    
   return (
     <div className='social'>
     <ul className='social-ul' /*</div>data-color={props.color} data-back={props.back}*/>
