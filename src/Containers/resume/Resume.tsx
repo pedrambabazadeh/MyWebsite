@@ -12,7 +12,7 @@ const Resume = () => {
 
     {/* From Here*/}
     {/* Make the sections drop down using the section tag selector */}
-    {/* What if each section in this holds a component beind drop-down using states 
+    {/* What if each section in this holds a component beind drop-down using states
     and another component inside hat component for the text?*/}
     {/* Use Display: Grid*/}
 
@@ -20,7 +20,7 @@ const Resume = () => {
         <section className='resume-intro'>
           <h2 className='resume-h2'>
             Introduction
-          </h2>        
+          </h2>
           <p className='resume-intro-p resume-p'>
           {CV.header}
           </p>
@@ -32,18 +32,20 @@ const Resume = () => {
             Experience
           </h2>
           <div className='resume-body'>
-            <div className='resume-item'>  
-              <h3 className='resume-h3'>
-                Poya Host <span className='resume-headline'> Front-end Developer trainee</span>
-              </h3>  
-              <h4 className='resume-h4'>
-              oct 2018 – oct 2019
-              </h4>   
-              <p className='resume-p'>
-              Solved the problem of direction in various web templates. Changed the directions from LTR to RTL for 
-  Persian websites and redesigned the templates.
-              </p>
-            </div>
+            {
+              CV.experiences.map((item) => {
+                return  ( 
+                  <div className='resume-item'>
+                    <h3 className='resume-h3'>
+                      {item.title} <span> {item.company}</span>
+                    </h3>
+                    <h4 className='resume-h4'>{item.time}</h4>
+                    <p className='resume-p'>
+                      {item.description}
+                    </p>
+                  </div>
+                )})
+            }
           </div>
 
         </section>
@@ -52,39 +54,21 @@ const Resume = () => {
             Certificates
           </h2>
           <div className='resume-body'>
-
-          <div className='resume-item'>
-                <h3 className='resume-h3'>
-                  Advanced React.js<span className='resume-headline'>Meta Ltd</span>
-                </h3>
-                <h4 className='resume-h4'>
-                 2024 | 16 Hours
-                </h4>
-                <p className='resume-p'>
-              verification link is available bellow:
-              </p>
-              <a className='resume-a' href="https://www.coursera.org/account/accomplishments/verify/MDH5FZX9J25W" download>Click Here</a>
-            </div>
-            <div className='resume-item'>
-                <h3 className='resume-h3'>
-                  JS Programming<span className='resume-headline'>Meta Ltd</span>
-                </h3>
-                <h4 className='resume-h4'>
-                 2024 | 42 Hours
-                </h4>
-                <p className='resume-p'>
-              verification link is available bellow:
-              </p>
-              <a className='resume-a' href="https://www.coursera.org/account/accomplishments/certificate/DXRQ5C4GPATC" download>Click Here</a>
-            </div>
-            <div className='resume-item'>
-                <h3 className='resume-h3'>
-                  ReactJS<span className='resume-headline'>Tehran institute of technology</span>
-                </h3>
-                <h4 className='resume-h4'>
-                  2023 | 60 Hours
-                </h4>
-            </div>
+          {
+              CV.certificates.map((item) => {
+                return  (
+                  <div className='resume-item'>
+                    <h3 className='resume-h3'>
+                      {item.title} <span> {item.company}</span>
+                    </h3>
+                    <h4 className='resume-h4'>{item.time}</h4>
+                    <p className='resume-p'>
+                    verification link is available bellow:
+                    </p>
+                    <a className='resume-a' href={item.link} download>Click Here</a>
+                  </div>
+                )})
+            }
           </div>
         </section>
         <section className='resume-skills'>
