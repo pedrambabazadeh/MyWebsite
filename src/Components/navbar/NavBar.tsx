@@ -26,7 +26,12 @@ const NavBar = (props:NavProps) => {
                    <Link to='/CV' style={{ display: "block", width:"100%" }}>
                     Resume
                    </Link>
-              </li> 
+              </li>
+             {/* <li> 
+                   <Link to='/Contact' style={{ display: "block", width:"100%" }}>
+                    Contact me
+                   </Link>
+              </li> */}
             </ul>
   )
 }

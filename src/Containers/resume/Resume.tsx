@@ -72,6 +72,12 @@ const Resume = () => {
           </div>
         </section>
         <section className='resume-skills'>
+          <h2 className='resume-h2'>Technical skills</h2>
+          <div className="resume-body">
+            <ul className="skills">
+              {CV.technicalSkills.map((skill) => <li><span>{skill.skill}:</span> <br/>{skill.description}</li>)}
+            </ul>
+          </div>
         </section>
       </div>
     </div>
