@@ -24,6 +24,10 @@
     border-color:var(--main-c-6);
 }
 
+.main[data-back = "Light"] .toggle, .main[data-back = "Light"]{
+    background-color:var(--main-bc-4);
+}
+
 
 
 .main-left{
@@ -53,10 +57,6 @@
 
 .main-left[data-status = false] {
     left:-30vw;
-}
-
-.main[data-back = "Light"] .toggle, .main[data-back = "Light"]{
-    background-color:var(--main-bc-4);
 }
 
 .main-right{
