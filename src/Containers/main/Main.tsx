@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 //import Typewriter from 'typewriter-effect'
 import './main.css'
 import {NavBar, Themes, Social, DarkLight, AnalogClock, PhotoBack} from '../../Components'
-import {Home, About, Resume, Contact, PlayGame} from '../../Containers'
+import {Home, About, Resume, Contact} from '../../Containers'
 import { myColors } from '../../Components/social-media/Social'
 import { backColors } from '../../Components/dark-light/DarkLight'
 import { FaBars, FaCaretLeft } from 'react-icons/fa'
@@ -17,7 +17,7 @@ const Main = () => {
  const [mainBack, setMainBack] = useState<backColors>("Dark");
  const [menu, setMenu] = useState<boolean>(false);
  
- const myCallBack = (passedData : myColors) => {setMainColor(passedData)};
+ const colorChanger = (mainColor : myColors) => {setMainColor(mainColor)};
  const backChanger = (backColor: backColors) => {setMainBack(backColor)};
 
  const toggleMenu = () => {
@@ -38,14 +38,13 @@ const Main = () => {
               <div className='left-container'>
                 <NavBar color={mainColor} back={mainBack}/>
                 <AnalogClock color={mainColor} back={mainBack}/>
-                <Themes colorChange={myCallBack} back={mainBack}/>
+                <Themes colorChange={colorChanger} back={mainBack}/>
                 <DarkLight backChange={backChanger} back={mainBack}/>
                 <Social color={mainColor} back={mainBack}/>
               </div>
         </div>
         <div className='main-right' data-color={mainColor}>
           <Routes>
-            <Route path="/"  />
             <Route index element={<Home />} />
             <Route path='/About' element={<About />} />
             <Route path='/CV' element={<Resume />} />
