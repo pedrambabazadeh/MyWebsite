@@ -3,11 +3,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, {useState} from 'react'
 //import Typewriter from 'typewriter-effect'
 import './main.css'
-import {NavBar, Themes, Social, DarkLight, AnalogClock, PhotoBack} from '../../Components'
+import {NavBar, Themes, Social, DarkLight, AnalogClock, PhotoBack, LanguageChanger } from '../../Components'
 import {Home, About, Resume, Contact} from '../../Containers'
 import { myColors } from '../../Components/social-media/Social'
 import { backColors } from '../../Components/dark-light/DarkLight'
 import { FaBars, FaCaretLeft } from 'react-icons/fa'
+import { LanguageProvider } from "../../Hooks/LanguageContext";
 
 
 
@@ -27,7 +28,7 @@ const Main = () => {
  }
 
   return (
-
+  <LanguageProvider>
    <BrowserRouter>
     <div className='main' data-back={mainBack} data-color={mainColor}>
               <PhotoBack color={mainColor} back={mainBack}/>
@@ -40,6 +41,7 @@ const Main = () => {
                 <AnalogClock color={mainColor} back={mainBack}/>
                 <Themes colorChange={colorChanger} back={mainBack}/>
                 <DarkLight backChange={backChanger} back={mainBack}/>
+                <LanguageChanger/>
                 <Social color={mainColor} back={mainBack}/>
               </div>
         </div>
@@ -58,6 +60,7 @@ const Main = () => {
         </div>
     </div>
   </BrowserRouter>
+  </LanguageProvider>
   )
 }
 
