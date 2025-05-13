@@ -1,15 +1,29 @@
 import React from 'react'
 import './home.css'
+import { useLanguage } from '../../Hooks/LanguageContext'
+import  {db} from '../../db'
+
+interface Translations {
+  home: {
+    title: string;
+    description: string;
+  };
+}
+
+interface Db {
+  [key: string]: Translations;
+}
+const typedDb: Db = db;
 
 const Home = () => {
+  const [language, setLanguage]= useLanguage();
   return (
     <div className='right-container'>
-            <h1> Welcome to Pedram Babazadeh's Website</h1>
+            <h1> {typedDb[language].home.title}</h1>
             <p>
-                Hello world; <br/>
-                My name is ("Pedrum");
+                {typedDb[language].home.description}
             </p>
-        </div> 
+        </div>
   )
 }
 
