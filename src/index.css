@@ -139,7 +139,12 @@ body
 [data-display ~= "flex"][data-display ~= "space-between"] {
   justify-content: space-between;
 }
-
+[data-display ~= "flex"][data-display ~= "space-aroung"] {
+  justify-content: space-around;
+}
+[data-display ~= "flex"][data-display ~= "space-evenly"] {
+  justify-content: space-evenly;
+}
 .main-right p{
   padding-left: 20px;
   width: 80%;
