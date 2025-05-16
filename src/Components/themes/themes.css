@@ -30,6 +30,15 @@
 .themes-ul[data-back = "Light"] [data-represent = green]{
     background-color: var(--main-c-2);
 }
+.themes-ul[data-back = "Light"] [data-represent = pink]{
+    background-color: var(--main-c-7);
+}
+.themes-ul[data-back = "Light"] [data-represent = yellow]{
+    background-color: var(--main-c-8);
+}
+.themes-ul[data-back = "Light"] [data-represent = bw]{
+    background-color: var(--main-c-12);
+}
 
 .themes-ul[data-back = "Dark"] [data-represent = red]{
     background-color: var(--main-c-6);
@@ -39,4 +48,13 @@
 }
 .themes-ul[data-back = "Dark"] [data-represent = green]{
     background-color: var(--main-c-5);
+}
+.themes-ul[data-back = "Dark"] [data-represent = pink]{
+    background-color: var(--main-c-10);
+}
+.themes-ul[data-back = "Dark"] [data-represent = yellow]{
+    background-color: var(--main-c-11);
+}
+.themes-ul[data-back = "Dark"] [data-represent = bw]{
+    background-color: var(--main-c-9);
 }

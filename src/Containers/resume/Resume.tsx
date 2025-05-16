@@ -1,8 +1,16 @@
 import React from 'react'
 import './resume.css'
 import { cvData as CV } from './cvData'
+import { useLanguage } from '../../Hooks/LanguageContext'
+import { CV as CVType } from '../../Types/cv'
+
+interface Resume {
+  [key: string]: CVType;
+}
+const typedCV: Resume = CV;
 
 const Resume = () => {
+  const [language] = useLanguage();
   return (
     <div className='resume'>
 
@@ -22,7 +30,7 @@ const Resume = () => {
             Introduction
           </h2>
           <p className='resume-intro-p resume-p'>
-          {CV.header}
+          {typedCV[language].header}
           </p>
 
         </section>
@@ -33,7 +41,7 @@ const Resume = () => {
           </h2>
           <div className='resume-body'>
             {
-              CV.experiences.map((item) => {
+              typedCV[language].experiences.map((item) => {
                 return  ( 
                   <div className='resume-item'>
                     <h3 className='resume-h3'>
@@ -55,7 +63,7 @@ const Resume = () => {
           </h2>
           <div className='resume-body'>
           {
-              CV.certificates.map((item) => {
+              typedCV[language].certificates.map((item) => {
                 return  (
                   <div className='resume-item'>
                     <h3 className='resume-h3'>
@@ -75,7 +83,7 @@ const Resume = () => {
           <h2 className='resume-h2'>Technical skills</h2>
           <div className="resume-body">
             <ul className="skills">
-              {CV.technicalSkills.map((skill) => <li><span>{skill.skill}:</span> <br/>{skill.description}</li>)}
+              {typedCV[language].technicalSkills.map((skill) => <li><span>{skill.skill}:</span> <br/>{skill.description}</li>)}
             </ul>
           </div>
         </section>
@@ -84,7 +92,7 @@ const Resume = () => {
           <h2 className='resume-h2'>Soft skills</h2>
           <div className="resume-body">
             <ul className="skills">
-              {CV.softSkills.map((skill) => <li><span>{skill.skill}:</span> <br/>{skill.description}</li>)}
+              {typedCV[language].softSkills.map((skill) => <li><span>{skill.skill}:</span> <br/>{skill.description}</li>)}
             </ul>
           </div>
         </section>

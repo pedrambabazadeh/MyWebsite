@@ -2,7 +2,7 @@ import React, {} from 'react'
 import { FaGithub, FaFacebook, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { backColors } from '../dark-light/DarkLight';
 import './social.css'
-export type myColors = "Blue" | "Red" | "Green"| "Yellow" ;
+export type myColors = "Blue" | "Red" | "Green"| "Yellow" | "Pink" | "BW" ;
 interface socialProps {
   color : myColors;
   back: backColors

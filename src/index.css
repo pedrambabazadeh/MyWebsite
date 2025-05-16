@@ -33,6 +33,14 @@ body {
   --main-c-5: #7efe68;
   --main-c-6: #fa6262;
 
+  --main-c-7: #ff00ae;
+  --main-c-8: #ffd500;
+  --main-c-9: #ffffff;
+
+  --main-c-10: #95016d;
+  --main-c-11: #a79e00;
+  --main-c-12: #000000;
+
   --main-bc:   #000000;
   --main-bc-2: #d2d2d2;
   --main-bc-3: #373737;
@@ -40,6 +48,8 @@ body {
   --main-res-bc:#000314;
   --main-res-bc-2:#041700;
   --main-res-bc-3:#160101;
+  --main-res-bc-4:#120014;
+  --main-res-bc-5:#0d0d00;
 
 
   --obj-s: 30%;
@@ -64,6 +74,15 @@ body
 [data-back = "Light"][data-color = Red] {
   color:  var(--main-c-3);
 }
+[data-back = "Light"][data-color = Pink] {
+  color: var(--main-c-10);
+}
+[data-back = "Light"][data-color = Yellow] {
+  color: var(--main-c-11);
+}
+[data-back = "Light"][data-color = BW] {
+  color:  var(--main-c-12);
+}
 
 [data-back = "Dark"][data-color = Blue] {
   color: var(--main-c-4);
@@ -76,6 +95,18 @@ body
 [data-back="Dark"][data-color = Red] {
   background-color: var(--main-res-bc-3);
   color:  var(--main-c-6);
+}
+[data-back = "Dark"][data-color = Pink] {
+  color: var(--main-c-7);
+  background-color: var(--main-res-bc-4);
+}
+[data-back = "Dark"][data-color = Yellow] {
+  background-color: var(--main-res-bc-5);
+  color:  var(--main-c-8);
+}
+[data-back="Dark"][data-color = BW] {
+  background-color: var(--main-bc);
+  color:  var(--main-c-9);
 }
 
 [data-display ~= "flex"] {

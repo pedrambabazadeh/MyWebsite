@@ -15,6 +15,9 @@ const Themes = (props:ThemesProps) => {
         <li className='themes-li' title='Red' data-represent='red' onClick={()=>{props.colorChange('Red')}}></li>
         <li className='themes-li' title='Blue' data-represent='blue'  onClick={()=>{props.colorChange('Blue')}}></li>
         <li className='themes-li' title='Green' data-represent='green'  onClick={()=>{props.colorChange('Green')}}></li>
+        <li className='themes-li' title='Pink' data-represent='pink'  onClick={()=>{props.colorChange('Pink')}}></li>
+        <li className='themes-li' title='Yellow' data-represent='yellow'  onClick={()=>{props.colorChange('Yellow')}}></li>
+        <li className='themes-li' title='Black and White' data-represent='bw'  onClick={()=>{props.colorChange('BW')}}></li>
     </ul>
 </div>
   )

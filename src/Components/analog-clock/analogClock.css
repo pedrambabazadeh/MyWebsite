@@ -64,6 +64,29 @@
 .clock-container[data-color = Red][data-back = "Dark"] .clock-pointer, .clock-container[data-color = Red][data-back = "Dark"] .clock-circle{
     stroke: var(--main-c-6);
 }
+.clock-container[data-color = BW][data-back = "Dark"] .clock-pointer, .clock-container[data-color = BW][data-back = "Dark"] .clock-circle{
+    stroke: var(--main-c-9);
+}
+
+.clock-container[data-color = Pink][data-back = "Dark"] .clock-pointer, .clock-container[data-color = Pink][data-back = "Dark"] .clock-circle{
+    stroke: var(--main-c-7);
+}
+
+.clock-container[data-color = Yellow][data-back = "Dark"] .clock-pointer, .clock-container[data-color = Yellow][data-back = "Dark"] .clock-circle{
+    stroke: var(--main-c-8);
+}
+.clock-container[data-color = BW][data-back = "Light"] .clock-pointer, .clock-container[data-color = BW][data-back = "Light"] .clock-circle{
+    stroke: var(--main-c-12);
+}
+
+.clock-container[data-color = Pink][data-back = "Light"] .clock-pointer, .clock-container[data-color = Pink][data-back = "Light"] .clock-circle{
+    stroke: var(--main-c-10);
+}
+
+.clock-container[data-color = Yellow][data-back = "Light"] .clock-pointer, .clock-container[data-color = Yellow][data-back = "Light"] .clock-circle{
+    stroke: var(--main-c-11);
+}
+
 
 /* media query*/
 
