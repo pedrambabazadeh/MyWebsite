@@ -13,10 +13,10 @@
     text-shadow: 2px 2px 3px #ce1717, -2px -2px 3px #ce1717;
 }
 .main[data-back = "Dark"][data-color = Yellow] .main-right {
-    text-shadow: 2px 2px 3px #f5f509, -2px -2px 3px #f5f509;
+    text-shadow: 2px 2px 3px #f6f67f, -2px -2px 3px #f6f67f;
 }
 .main[data-back = "Dark"][data-color = Pink] .main-right {
-    text-shadow: 2px 2px 3px #e800b6, -2px -2px 3px #e800b6;
+    text-shadow: 2px 2px 3px #f895e2, -2px -2px 3px #f895e2;
 }
 .main[data-back="Dark"][data-color = BW] .main-right {
     text-shadow: 2px 2px 3px #ffffff, -2px -2px 3px #ffffff;

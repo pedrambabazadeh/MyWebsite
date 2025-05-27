@@ -1,15 +1,16 @@
 
 .clock-container{
-    display: inline-block;
+    display: block;
     width: 100%;
     background-color: transparent;
     text-align:center;
-    margin-top: 2rem;
+    margin: 10px auto;
     background-color: unset!important;
 }
 
 .clock-svg {
     width:30%;
+    
 }
 
 .clock-circle, .clock-pointer{
@@ -93,6 +94,7 @@
 @media (max-height: 500px)
 {
   .clock-container{
-      display: none;
+      width: 250px;
   }
 }
+

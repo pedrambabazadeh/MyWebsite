@@ -4,7 +4,7 @@ export const db = {
     en:{
         home:{
             title:'Home',
-            description:`Here is Pedram's website.I am an experienced fronted developer (momently becoming a fullstack with Flask) and have a
+            description:`Here is Pedram's website.I am an experienced frontend developer (momently becoming a fullstack with Flask) and have a
                 great passion for becoming a Bioinformatist in the future. Achieving this goal, I have already learned Python, Numpy, Pandas, Scikit learn, and matplotlib and still going on.
                 Thank you very much for visiting my website.`
         },

@@ -30,3 +30,24 @@
 .photo-back[data-back ="Light"][data-color="Red"] svg path {
     fill:var(--main-c-3);
 }
+
+
+.photo-back[data-back ="Dark"][data-color="Pink"] svg path {
+    fill:var(--main-c-7);
+}
+.photo-back[data-back ="Dark"][data-color="Yellow"] svg path {
+    fill:var(--main-c-8);
+}
+.photo-back[data-back ="Dark"][data-color="BW"] svg path {
+    fill:var(--main-c-9);
+}
+
+.photo-back[data-back ="Light"][data-color="Pink"] svg path {
+    fill:var(--main-c-10);
+}
+.photo-back[data-back ="Light"][data-color="Yellow"] svg path {
+    fill:var(--main-c-11);
+}
+.photo-back[data-back ="Light"][data-color="BW"] svg path {
+    fill:var(--main-c-12);
+}

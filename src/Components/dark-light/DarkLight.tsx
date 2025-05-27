@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaSun, FaMoon} from 'react-icons/fa'
+import {FaRegSun, FaRegMoon} from 'react-icons/fa'
 import './darkLight.css'
 export type backColors ="Dark" | "Light";
 
@@ -12,10 +12,10 @@ const DarkLight = (props:DarkLightProps) => {
     <div className='dark-light'>
     <ul className='dark-light-ul' data-color="" data-back={props.back}>
         <li className='dark-light-li' title='light-mode' data-represent='light-mode' onClick={()=>{props.backChange("Light")}}>
-           <FaSun /> 
+           <FaRegSun/> 
         </li>
         <li className='dark-light-li' title='dark-mode' data-represent='dark-mode' onClick={()=>{props.backChange("Dark")}}>
-          <FaMoon/>
+          <FaRegMoon/>
         </li>
     </ul>
     </div>

@@ -7,7 +7,7 @@ import {NavBar, Themes, Social, DarkLight, AnalogClock, PhotoBack, LanguageChang
 import {Home, About, Resume, Contact} from '../../Containers'
 import { myColors } from '../../Components/social-media/Social'
 import { backColors } from '../../Components/dark-light/DarkLight'
-import { FaBars, FaCaretLeft } from 'react-icons/fa'
+import { FaBars, FaTimes} from 'react-icons/fa'
 import { LanguageProvider } from "../../Hooks/LanguageContext";
 
 
@@ -34,7 +34,7 @@ const Main = () => {
               <PhotoBack color={mainColor} back={mainBack}/>
         <div className='main-left' data-back={mainBack} data-status={menu}>
              <div className='toggle toggle-menu' onClick={toggleMenu}>
-                <FaBars/>
+               { menu? <FaTimes/> : <FaBars/>} 
               </div>
               <div className='left-container'>
                 <NavBar color={mainColor} back={mainBack}/>
@@ -47,15 +47,11 @@ const Main = () => {
         </div>
         <div className='main-right' data-color={mainColor}>
           <Routes>
-            <Route index element={<Home />} />
+            <Route index  element={<Home />} />
             <Route path='/About' element={<About />} />
             <Route path='/CV' element={<Resume />} />
             <Route path='/Contact' element={<Contact/>}/>
           </Routes>
-
-        {/*Test Area*/}
-
-        {/*Test Area End*/}
 
         </div>
     </div>

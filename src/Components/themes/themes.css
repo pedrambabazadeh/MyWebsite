@@ -1,11 +1,12 @@
 .themes {
-    width:50%;
+    width:100%;
     display: inline-block;
 }
 
 .themes-ul{
     margin:0;
     padding:0;
+    padding-left: 5px;
     text-align: center;
     margin-top:15px;
 }
